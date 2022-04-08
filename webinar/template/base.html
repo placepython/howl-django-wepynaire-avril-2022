@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+
+    {% block head_scripts %}
+        <script defer src="https://unpkg.com/htmx.org@1.7.0"></script>
+        <script defer src="//unpkg.com/alpinejs"></script>
+    {% endblock head_scripts %}
+    {% block head_styles %}
+        <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    {% endblock head_styles %}
+</head>
+<body>
+    {% block header %}{% endblock header %}
+    {% block content %}{% endblock content %}
+    {% block footer %}{% endblock footer %}
+    {% block bottom_scripts %}{% endblock bottom_scripts %}
+</body>
+</html>

@@ -33,9 +33,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 PROJECT_APPS = [
-    'webinar.apps.WebinarConfig',
-    'webinar.movies.apps.MoviesConfig',
-    'webinar.users.apps.UsersConfig',
+    'webinar',
+    'webinar.movies',
+    'webinar.users',
 ]
 
 DJANGO_APPS = [
